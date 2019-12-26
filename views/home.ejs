@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/style1.css">
+  </head>
+  <body>
+
+      <div class="heading-1">
+        <h1 class="head-1">Cryptocurrency Exchange Platform</h1>
+      </div>
+
+      <form action="/" method="post">
+        <table class="table-1">
+          <tr>
+            <th><h2>BUY</h2></th>
+            <th><h2>SELL</h2></th>
+          </tr>
+
+          <tr>
+
+
+            <td align="center" style="padding-right:30px;">
+              <table>
+                <tr>
+                  <td class="cells">ASSET-1:</td>
+                  <td style="padding-left:20px">
+                    <select name="asset1Buy" id="asset1Buy" class="selects">
+                      <option value="BTC">BTC</option>
+                      <option value="ETH">ETH</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="cells">ASSET-2:</td>
+                  <td style="padding-left:20px">
+                    <select name="asset2Buy" id="asset2Buy" class="selects">
+                      <option value="BTC">BTC</option>
+                      <option value="ETH">ETH</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="cells">AMOUNT:</td>
+                  <td style="padding-left:20px;">
+                    <input type="text" class="inputs" name="amountBuy" id="amountBuy">
+                  </td>
+                </tr>
+
+              </table>
+            </td>
+
+
+            <td align="center" style="padding-left:30px">
+              <table>
+                <tr>
+                  <td class="cells">ASSET-1:</td>
+                  <td style="padding-left:20px">
+                    <select name="asset1Sell" id="asset1Sell" class="selects">
+                      <option value="BTC">BTC</option>
+                      <option value="ETH">ETH</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="cells">ASSET-2:</td>
+                  <td style="padding-left:20px">
+                    <select name="asset2Sell" id="asset2Sell" class="selects">
+                      <option value="BTC">BTC</option>
+                      <option value="ETH">ETH</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="cells">AMOUNT:</td>
+                  <td style="padding-left:20px;">
+                    <input type="text" class="inputs" name="amountSell" id="amountSell">
+                  </td>
+                </tr>
+
+              </table>
+            </td>
+
+          </tr>
+          <tr >
+
+            <td align="center" style="padding-top:20px">
+
+              <input  class="submit-button"  onclick="buyFunc()" type="submit" name="BUY" value="BUY" style="text-align: center;">
+
+            </td>
+            <td align="center" style="padding-top:20px">
+
+              <input class="submit-button"  onclick="sellFunc()" type="submit" name="SELL" value="SELL" style="text-align: center;">
+
+            </td>
+          </tr>
+        </table>
+
+        <input type="hidden" name="type" id="type">
+
+      </form>
+
+
+
+    
+
+
+
+
+
+
+
+
+        <!-- <form action="/" method="post">
+          <label for="name">NAME</label>
+          <input type="text" name="name" id="name">
+          <label for="type">TYPE</label>
+          <input type="text" name="type" id="type">
+          <label for="asset1">ASSET1</label></label>
+          <input type="text" name="asset1" id="asset1">
+          <label for="asset2">ASSET2</label>
+          <input type="text" name="asset2" id="asset2">
+          <label for="price">AMOUNT</label>
+          <input type="text" name="amount" id="amount">
+          <input type="submit">
+        </form>
+ -->
+
+
+  </body>
+  <script>
+    function buyFunc(){
+       document.getElementById("type").value="BUY";
+       console.log(document.getElementById("type").value);
+    }
+
+
+      function sellFunc(){
+         document.getElementById("type").value="SELL";
+      }
+  </script>
+
+</html>
